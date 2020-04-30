@@ -1,0 +1,83 @@
+// Buatlah program untuk menerima input data mahasiswa dengan pemrograman struktural dan object oriented. //
+// Untuk awal masih memakai C++ //
+
+OOP
+
+#include <iostream>
+using namespace std;
+
+class Bio {
+
+private:
+string data1;
+string data2;
+float data3;
+int namearr[10];
+int addressarr[10];
+int datearr[10];
+
+public:
+void input() {
+for(int i=0; i<10;i++){
+cout << "Name: ";
+cin >> data1;
+data1=namearr[i];
+cout << endl;
+cout << "Address: ";
+cin >> data2;
+data2=addressarr[i];
+cout << endl;
+cout << "Day of Birth: ";
+cin >> data3;
+data3=datearr[i];
+cout <<"________________________________";
+cout << endl;
+    }
+
+  }
+};
+
+int main(){
+Bio o1;
+o1.input();
+return 0;
+}
+
+PP
+
+#include <iostream>
+using namespace std;
+
+string data1;
+string data2;
+float data3;
+int namearr[10];
+int addressarr[10];
+int datearr[10];
+
+void input()
+{
+
+for(int i=0; i<10;i++){
+cout << "Name: ";
+cin >> data1;
+data1=namearr[i];
+cout << endl;
+cout << "Address: ";
+cin >> data2;
+data2=addressarr[i];
+cout << endl;
+cout << "Day of Birth: ";
+cin >> data3;
+data3=datearr[i];
+cout <<"________________________________";
+cout << endl;
+}
+
+}
+
+int main(){
+input();
+return 0;
+}
+
